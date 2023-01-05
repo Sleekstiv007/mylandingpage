@@ -30,39 +30,42 @@ function App() {
           </div>
         </nav>
 
-        <div className="flex flex-col md:flex-row m-5 justify-between  sm:text-center items-center h-full">
+        <div className="flex flex-col md:flex-row m-5 sm:text-center items-center h-[100%]">
           <div>
             <article>
-              <h1 className="font-bold flex flex-col text-5xl md: text-left">
-                Empower <br />
-                Your business
+              <h1 className="text-center text-[#065AC8] font-semibold md:flex justify-start text-6xl">
+                <b className="font-mono text-7xl tracking-tighter">Manage</b>{" "}
+                <br />
+              </h1>
+              <h1 className="text-center text-[#065AC8] font-semibold md:flex justify-start text-6xl">
+                <p className="text-black">Your business</p>
               </h1>
             </article>
             <br />
-            <p className="text-left">
+            <p className="flex text-left">
               Moniepoint MFB provides banking solutions that enables businesses
               to collect payments, access loans, manage operations and
               ultimately grow their business.{" "}
             </p>
+
+            <div className="mt-6 flex justify-center md:justify-start">
+              <button className="flex rounded bg-blue-600 p-6">
+                Open an account now
+                <SiAccenture className="mt-2 ml-2" color="#fff" size={10} />
+              </button>
+            </div>
           </div>
 
-          <div className="w-[50%] ">
+          <div className="w-[95%] rounded-3xl p-1 m-1 px-1 py-1 md:w-[50%]">
             <img src={monieman} alt="monieman" />
           </div>
         </div>
       </section>
 
-      <section>
-        <div>
-          <button className="flex p-2/3 px-1 py-1 justify-center content-center bg-blue-400">
-            Create an account
-            <SiAccenture size={20} />
-          </button>
-        </div>
-      </section>
+      <section></section>
 
       <section>
-        <div className="flex justify-end text-4xl font-semibold">
+        <div className=" flex justify-start  md:justify-end text-4xl font-semibold">
           <h1>
             Powering <span className="text-blue-800">500,000</span>
             <br /> successful businesses
