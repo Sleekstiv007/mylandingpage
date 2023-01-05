@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="bg-white">
       <section className="flex flex-col h-screen md:px-24">
-        <nav className="flex justify-between pt-6">
+        <nav className="flex justify-between mt-8 pt-6">
           <div>
             <h1 className=" font-bold tracking-wider">
               Monie<span className="font-thin">point</span> MFB
@@ -49,7 +49,7 @@ function App() {
             </p>
 
             <div className="mt-6 flex justify-center md:justify-start">
-              <button className="flex rounded bg-blue-600 p-6">
+              <button className="flex text-white rounded bg-blue-600 py-5 px-10">
                 Open an account now
                 <SiAccenture className="mt-2 ml-2" color="#fff" size={10} />
               </button>
@@ -64,7 +64,7 @@ function App() {
 
       <section></section>
 
-      <section>
+      <section className="md:px-24">
         <div className=" flex justify-start  md:justify-end text-4xl font-semibold">
           <h1>
             Powering <span className="text-blue-800">500,000</span>
