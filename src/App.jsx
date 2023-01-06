@@ -1,34 +1,14 @@
 import Card from "./components/home/card";
-import NavLink from "./components/home/navLink";
 import { SiAccenture } from "react-icons/si";
 import monieman from "./monieman.png";
+import Nav from "./components/home/nav";
+import { FaCaretRight } from "react-icons/fa";
 
 function App() {
   return (
     <div className="bg-white">
       <section className="flex flex-col h-screen md:px-24">
-        <nav className="flex justify-between mt-8 pt-6">
-          <div>
-            <h1 className=" font-bold tracking-wider">
-              Monie<span className="font-thin">point</span> MFB
-            </h1>
-          </div>
-          <div className="w-5/12 md:flex flex-3 justify-between cursor-pointer">
-            <NavLink name="Home" />
-            <NavLink name="Payments" />
-            <NavLink name="Loans" />
-            <NavLink name="Manage" />
-            <NavLink name="Protect" />
-          </div>
-          <div className="hidden md:block">
-            <button className="mx-1 bg-[#065AC8] md:rounded p-2 px-2/3 py-2/3">
-              Contact Us
-            </button>
-            <button className=" bg-gray-500 md:rounded p-2 px2/3 py-2/3">
-              Get Started
-            </button>
-          </div>
-        </nav>
+        <Nav />
 
         <div className="flex flex-col md:flex-row m-5 sm:text-center items-center h-[100%]">
           <div>
@@ -65,7 +45,11 @@ function App() {
       <section></section>
 
       <section className="md:px-24">
-        <div className=" flex justify-start  md:justify-end text-4xl font-semibold">
+        <div className=" flex justify-start md:justify-end text-4xl font-semibold">
+        <div className="md:flex flex-grow justify-end py-8 items-center "><hr className="relative left-4 bg-slate-400 h-0.5 border-0 w-[50%]"/>
+            <FaCaretRight className="text-slate-400"/>
+          </div>
+
           <h1>
             Powering <span className="text-blue-800">500,000</span>
             <br /> successful businesses
