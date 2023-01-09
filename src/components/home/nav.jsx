@@ -1,4 +1,5 @@
 import NavLink from "./navLink";
+import { FaBars } from "react-icons/fa";
 
 const Nav=()=>{
 return (
@@ -8,18 +9,19 @@ return (
         Monie<span className="font-thin">point</span> MFB
       </h1>
     </div>
-    <div className="w-5/12 md:flex flex-3 justify-between cursor-pointer">
+    <div className="md:flex justify-between md:flex-grow cursor-pointer md:px-36">
       <NavLink name="Home" />
       <NavLink name="Payments" />
       <NavLink name="Loans" />
       <NavLink name="Manage" />
       <NavLink name="Protect" />
-    </div> 
+      <FaBars className=" flex mr-5 justify-end md:hidden" />
+    </div>
     <div className="hidden md:block">
-      <button className="mx-1 bg-[#065AC8] md:rounded p-2 px-2/3 py-2/3">
+      <button className="mx-1 bg-slate-600 text-[#0361F0]md:rounded p-2 px-2/3 py-2/3">
         Contact Us
       </button>
-      <button className=" bg-gray-500 md:rounded p-2 px2/3 py-2/3">
+      <button className=" bg-[#0763F3] text-white md:rounded p-2 px2/3 py-2/3">
         Get Started
       </button>
     </div>

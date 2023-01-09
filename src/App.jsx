@@ -3,6 +3,8 @@ import { SiAccenture } from "react-icons/si";
 import monieman from "./monieman.png";
 import Nav from "./components/home/nav";
 import { FaCaretRight } from "react-icons/fa";
+import { MdOutlineReorder } from "react-icons/md";
+
 
 function App() {
   return (
@@ -34,6 +36,27 @@ function App() {
                 <SiAccenture className="mt-2 ml-2" color="#fff" size={10} />
               </button>
             </div>
+
+            <div className="hidden md:flex flex-start mt-1 py-6">
+              <p className="md:font-semibold text-4xl mr-2 tracking-tighter">
+                500k
+              </p>
+              <span className="md:text-slate-400 text-md tracking-tight mr-3">
+                Businesses
+                <br /> Supported
+              </span>
+
+              <MdOutlineReorder className="md:text-slate-300 mr-3" />
+
+              <p className="md:font-semibold text-3xl pr-5 flex ">
+                4t{" "}
+                <span className="md:text-slate-400 text-xs mx-2">
+                  in <br />
+                  transanctions <br />
+                  monthly
+                </span>
+              </p>
+            </div>
           </div>
 
           <div className="w-[95%] rounded-3xl p-1 m-1 px-1 py-1 md:w-[50%]">
@@ -42,12 +65,11 @@ function App() {
         </div>
       </section>
 
-      <section></section>
-
       <section className="md:px-24">
-        <div className=" flex justify-start md:justify-end text-4xl font-semibold">
-        <div className="md:flex flex-grow justify-end py-8 items-center "><hr className="relative left-4 bg-slate-400 h-0.5 border-0 w-[50%]"/>
-            <FaCaretRight className="text-slate-400"/>
+        <div className=" md:flex justify-start md:justify-end text-4xl font-semibold">
+          <div className="md:flex flex-grow justify-end py-8 items-center ">
+            <hr className="md:relative left-4 bg-slate-400 h-0.5 border-0 w-[99%] md:flex flex-start" />
+            <FaCaretRight className="hidden md:text-slate-400 md:flex justify-start" />
           </div>
 
           <h1>
