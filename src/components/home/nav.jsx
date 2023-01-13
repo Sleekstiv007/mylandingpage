@@ -15,7 +15,7 @@ return (
       <NavLink name="Loans" />
       <NavLink name="Manage" />
       <NavLink name="Protect" />
-      <FaBars className=" flex mr-5 justify-end md:hidden" />
+      <FaBars button="true" className=" flex mr-5 justify-end md:hidden" />
     </div>
     <div className="hidden md:block">
       <button className="mx-1 bg-slate-600 text-[#0361F0]md:rounded p-2 px-2/3 py-2/3">

@@ -4,7 +4,10 @@ import monieman from "./monieman.png";
 import Nav from "./components/home/nav";
 import { FaCaretRight } from "react-icons/fa";
 import { MdOutlineReorder } from "react-icons/md";
-
+import businessacct from "./businessacct.png"
+import expensecards from "./expensecards.png"
+import pos from "./pos.png"
+import wcl from "./wcl.png"
 
 function App() {
   return (
@@ -95,6 +98,30 @@ function App() {
             title="Complete Control"
             body="Track business expenses and manage employees need all in one place"
           />
+        </div>
+      </section>
+
+      <section>
+        <div className="h-screen">
+          <h3 className="flex justify-center mb-8 text-center ">
+            <p className="font-bold text-xl md:text-3xl">
+              All the tools you need to run your <br /> business with ease
+            </p>
+          </h3>
+          <div className="grid grid-cols-2 items-center box-border justify-evenly md:justify-center gap-6 gap-x-3  md:flex w-full">
+            <img
+              src={businessacct}
+              alt="businessacct"
+              className="w-8/12 md:w-1/6"
+            />
+            <img
+              src={expensecards}
+              alt="expensecards"
+              className="w-8/12 md:w-1/6"
+            />
+            <img src={pos} alt="pos" className="w-8/12 md:w-1/6" />
+            <img src={wcl} alt="wcl" className="w-8/12 md:w-1/6" />
+          </div>
         </div>
       </section>
     </div>
