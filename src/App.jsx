@@ -108,7 +108,7 @@ function App() {
               All the tools you need to run your <br /> business with ease
             </p>
           </h3>
-          <div className="grid grid-cols-2 items-center box-border justify-evenly md:justify-center gap-6 gap-x-3  md:flex w-full">
+          <div className=" grid grid-cols-2 items-center box-border justify-evenly md:justify-center gap-6 gap-x-3  md:flex w-full  md:bg-slate-100">
             <img
               src={businessacct}
               alt="businessacct"
