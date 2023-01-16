@@ -3,9 +3,9 @@ import { FaBars } from "react-icons/fa";
 
 const Nav=()=>{
 return (
-  <nav className="flex justify-between mt-8 pt-6">
+  <nav className="flex mx-5 lg:mx-0 justify-between mt-8 pt-6">
     <div>
-      <h1 className=" font-bold tracking-wider">
+      <h1 className="font-bold tracking-wider">
         Monie<span className="font-thin">point</span> MFB
       </h1>
     </div>
